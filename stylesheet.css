@@ -129,3 +129,10 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.shown{
+  display:block;
+}
+.hidden{
+  display:none;
+}
