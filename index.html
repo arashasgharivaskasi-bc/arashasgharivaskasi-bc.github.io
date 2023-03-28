@@ -46,7 +46,6 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
              <td style="padding:20px;width:30%;vertical-align:top;transform:translate(7%,0%)">
@@ -65,13 +64,12 @@
               <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
               <br>
               <em>IEEE International Conference on Robotics and Automation (ICRA), 2021.</em><br>
-                <em>Journal version accepted to IEEE Transactions on Robotics (T-RO), 2023.</em><br>
+              <em>Journal version accepted to IEEE Transactions on Robotics (T-RO), 2023.</em><br>
               <a href="https://arashasgharivaskasi-bc.github.io/SSMI_webpage/">website</a> /
               <a href="https://youtu.be/KosSp3znqFo">video</a> /
               <a href="https://github.com/ExistentialRobotics/SSMI">code</a> /
               <a href="https://ieeexplore.ieee.org/abstract/document/9561711">conference version</a> /
               <a href="https://ieeexplore.ieee.org/document/10057106">journal version</a>
-              <p></p>
               <p>We develop a Bayesian multiclass mapping algorithm based on an octree data structure, where each voxel maintains a categorical distribution over semantic classes. We derive a closed-form efficiently computable lower bound of the Shannon mutual information between a multiclass octomap and a set of range-category measurements using semantic run-length encoding of the sensor rays. The bound allows rapid evaluation of many potential robot trajectories for autonomous exploration and mapping. We compare our method against state-of-the-art exploration techniques and apply it in a variety of simulated and real-world experiments.</p>
         </td>
         </tbody></table>
@@ -146,7 +144,34 @@
               <p>Our approach builds a three-dimensional, semantic tree representation of the environment from sensor data which is then compressed by a novel information-theoretic tree-pruning approach. The proposed approach is probabilistic and incorporates the uncertainty in semantic classification inherent in real-world environments. Moreover, our approach allows robots to prioritize individual semantic classes when generating the compressed trees, so as to design multi-resolution representations that retain the relevant semantic information while simultaneously discarding unwanted semantic categories. We demonstrate the approach by compressing semantic octree models of a large outdoor, semantically rich, real-world environment. In addition, we show how the octree abstractions can be used to create semantically-informed graphs for motion planning, and provide a comparison of our approach with uninformed graph construction methods such as Halton sequences.</p>
         </td>
         </tbody></table>
-        
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+             <td style="padding:20px;width:30%;vertical-align:top;transform:translate(0%,0%)">
+             <div style="padding:0px">
+              <img src='assets/demo_iros22_1.jpg' width="220">
+              <img src='assets/demo_iros22_2.jpg' width="220">
+              <img src='assets/demo_iros22_3.jpg' width="220">
+             </div>
+            </td>
+
+        <td style="padding:20px;width:80%;vertical-align:middle">
+              <a href="https://arashasgharivaskasi-bc.github.io/grad_active_mapping/">
+                  <papertitle>Active Mapping via Gradient Ascent Optimization of Shannon Mutual Information over Continuous <em>SE(3)</em> Trajectories</papertitle>
+              </a>
+              <br>
+              <strong>Arash Asgharivaskasi</strong>,
+              <a href="https://shumon0423.github.io/">Shumon Koga</a>,
+              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022.</em><br>
+              <a href="https://arashasgharivaskasi-bc.github.io/grad_active_mapping/">website</a> /
+              <a href="https://youtu.be/UIjr5dVngfc">video</a> /
+              <a href="https://ieeexplore.ieee.org/abstract/document/9981875">paper</a>
+              <p></p>
+              <p>The non-smooth nature of ray-tracing within a grid representation makes the active mapping objective function non-differentiable, forcing existing methods to search over a discrete space of candidate trajectories. This work proposes a differentiable approximation of the Shannon mutual information between a grid map and ray-based observations that enables gradient ascent optimization in the continuous space of <em>SE(3)</em> sensor poses. Our gradient-based formulation leads to more informative sensing trajectories, while avoiding occlusions and collisions. The proposed method is demonstrated in simulated and real-world experiments in 2-D and 3-D environments.</p>
+        </td>
+        </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
              <td style="padding:20px;width:30%;vertical-align:top;transform:translate(0%,0%)">
              <div style="padding:10px">
@@ -165,6 +190,32 @@
               <a href="https://ieeexplore.ieee.org/abstract/document/9867507">paper</a>
               <p></p>
               <p>We propose a novel active Simultaneous Localization and Mapping (SLAM) method with continuous trajectory optimization over a stochastic robot dynamics model. The problem is formalized as a stochastic optimal control over the continuous robot kinematic model to minimize a cost function that involves the covariance matrix of the landmark states. We tackle the problem by separately obtaining an open-loop control sequence subject to deterministic dynamics by iterative Covariance Regulation (iCR) and a closed-loop feedback control under stochastic robot and covariance dynamics by Linear Quadratic Regulator (LQR). The proposed optimization method captures the coupling between localization and mapping in predicting uncertainty evolution and synthesizes highly informative sensing trajectories. We demonstrate its performance in active landmark-based SLAM using relative-position measurements with a limited field of view.</p>
+        </td>
+        </tbody></table>
+				
+				<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+             <td style="padding:20px;width:30%;vertical-align:top;transform:translate(5%,-1%)">
+             <div style="padding:45px">
+              <img src='assets/demo_iros21_1.gif' width="130">
+              <img src='assets/demo_iros21_2.gif' width="130">
+             </div>
+            </td>
+
+        <td style="padding:20px;width:80%;vertical-align:middle">
+              <a href="https://shumon0423.github.io/IROS2021_webpage/">
+                  <papertitle>Active Exploration and Mapping via Iterative Covariance Regulation over Continuous <em>SE(3)</em> Trajectories</papertitle>
+              </a>
+              <br>
+              <a href="https://shumon0423.github.io/">Shumon Koga</a>,
+              <strong>Arash Asgharivaskasi</strong>,
+              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2021.</em><br>
+              <a href="https://shumon0423.github.io/IROS2021_webpage/">website</a> /
+              <a href="https://youtu.be/Qgt64a0bOiA">video</a> /
+              <a href="https://ieeexplore.ieee.org/abstract/document/9636486">paper</a>
+              <p></p>
+              <p>This paper develops iterative Covariance Regulation (iCR), a novel method for active exploration and mapping for a mobile robot equipped with on-board sensors. The problem is posed as optimal control over the <em>SE(3)</em> pose kinematics of the robot to minimize the differential entropy of the map conditioned on the potential sensor observations. We introduce a differentiable field of view formulation, and derive iCR via the gradient descent method to iteratively update an open-loop control sequence in continuous space so that the covariance of the map estimate is minimized. We demonstrate autonomous exploration and uncertainty reduction in simulated occupancy grid environments.</p>
         </td>
         </tbody></table>
 				
