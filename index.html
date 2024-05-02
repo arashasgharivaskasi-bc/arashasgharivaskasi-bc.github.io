@@ -48,22 +48,75 @@
         </tbody></table>
 
        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-             <td style="padding:20px;width:30%;vertical-align:top;transform:translate(7%,0%)">
-             <div style="padding:35px">
-              <img src='assets/demo_roam_mapping.gif' width="150">
+             <td style="padding:-0px;width:30%;vertical-align:top;transform:translate(-10%,7%)">
+             <div style="padding:0px">
+              <figure><figcaption style="text-align:center">Simulation</figcaption><img src='assets/demo_roam_1.gif' width="265" ></figure>
+              <figure><figcaption style="text-align:center">Real-world</figcaption><img src='assets/demo_roam_2.gif' width="265" ></figure>
+             </div>
+            </td>
+
+        <td style="padding:20px;width:80%;vertical-align:middle;transform:translate(-13.5%,0%)">
+              <a href="https://existentialrobotics.org/ROAM_webpage/">
+                  <papertitle>Riemannian Optimization for Active Mapping with Robot Teams</papertitle>
+              </a>
+              <br>
+              <strong>Arash Asgharivaskasi</strong>,
+              <a href="https://www.linkedin.com/in/fritz-girke-9a4a411b6/?originalSubdomain=de">Fritz Girke</a>,
+              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <br>
+              <em>Submitted to IEEE Transactions on Robotics (T-RO), 2024.</em><br>
+              <a href="https://existentialrobotics.org/ROAM_webpage/">website</a> /
+              <a href="https://youtu.be/EADUWRSkOKs">video</a> /
+              <a href="https://arxiv.org/abs/2404.18321">paper</a>
+              <p>Autonomous exploration of unknown environments using a team of mobile robots demands distributed perception and planning strategies to enable efficient and scalable performance. Ideally, each robot should update its map and plan its motion not only relying on its own observations, but also considering the observations of its peers. Centralized solutions to multi-robot coordination are susceptible to central node failure and require a sophisticated communication infrastructure for reliable operation. Current decentralized active mapping methods consider simplistic robot models with linear-Gaussian observations and Euclidean robot states. In this work, we present a distributed multi-robot mapping and planning method, called Riemannian Optimization for Active Mapping (ROAM). We formulate an optimization problem over a graph with node variables belonging to a Riemannian manifold and a consensus constraint requiring feasible solutions to agree on the node variables. We develop a distributed Riemannian optimization algorithm that relies only on one-hop communication to solve the problem with consensus and optimality guarantees. We show that multi-robot active mapping can be achieved via two applications of our distributed Riemannian optimization over different manifolds: distributed estimation of a 3-D semantic map and distributed planning of SE(3) trajectories that minimize map uncertainty. We demonstrate the performance of ROAM in simulation and real-world experiments using a team of robots with RGB-D cameras.</p>
+        </td>
+        </tbody></table>
+       
+       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+             <td style="padding:0px;width:30%;vertical-align:top;transform:translate(9%,10%)">
+             <div style="padding:0px">
+              <img src='assets/demo_llm_planning_1.gif' width="225">
+              <img src='assets/demo_llm_planning_2.gif' width="225">
              </div>
             </td>
 
         <td style="padding:20px;width:80%;vertical-align:middle">
-              <a href="https://arashasgharivaskasi-bc.github.io/SSMI_webpage/">
-                  <papertitle>Distributed Optimization with Consensus Constraint for Multi-Robot Semantic Octree Mapping</papertitle>
+              <a href="https://existentialrobotics.org/pages/llm-planning.html">
+                  <papertitle>Optimal Scene Graph Planning with Large Language Model Guidance</papertitle>
               </a>
+              <br>
+              <a href="https://daizhirui.github.io/">Zhirui Dai</a>,
+              <strong>Arash Asgharivaskasi</strong>,
+              <a href="https://thaipduong.github.io/">Thai Duong</a>,
+              <a href="https://www.linkedin.com/in/shusen-lin-a30495209?originalSubdomain=cn">Shusen Lin</a>,
+              <a href="https://www.grasp.upenn.edu/people/mariliza-tzes/">Maria-Elizabeth Tzes</a>,
+              <a href="https://www.georgejpappas.org/">George Pappas</a>,
+              <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA), 2024.</em><br>
+              <a href="https://existentialrobotics.org/pages/llm-planning.html">website</a> /
+              <a href="https://youtu.be/dZQnzeGAqzE">video</a> /
+              <a href="https://arxiv.org/abs/2309.09182">paper</a>
+              <p>Recent advances in metric, semantic, and topological mapping have equipped autonomous robots with semantic concept grounding capabilities to interpret natural language tasks. This work aims to leverage these new capabilities with an efficient task planning algorithm for hierarchical metric-semantic models. We consider a scene graph representation of the environment and utilize a large language model (LLM) to convert a natural language task into a linear temporal logic (LTL) automaton. Our main contribution is to enable optimal hierarchical LTL planning with LLM guidance over scene graphs. To achieve efficiency, we construct a hierarchical planning domain that captures the attributes and connectivity of the scene graph and the task automaton, and provide semantic guidance via an LLM heuristic function. To guarantee optimality, we design an LTL heuristic function that is provably consistent and supplements the potentially inadmissible LLM guidance in multi-heuristic planning. We demonstrate efficient planning of complex natural language tasks in scene graphs of virtualized real environments.</p>
+        </td>
+        </tbody></table>
+
+       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+             <td style="padding:35px;width:30%;vertical-align:top;transform:translate(7%,0%)">
+             <div style="padding:0px">
+              <img src='assets/demo_roam_mapping_2.png' width="185">
+              <img src='assets/demo_roam_mapping_1.gif' width="200">
+             </div>
+            </td>
+
+        <td style="padding:20px;width:80%;vertical-align:middle">
+              <papertitle>Distributed Optimization with Consensus Constraint for Multi-Robot Semantic Octree Mapping</papertitle>
               <br>
               <strong>Arash Asgharivaskasi</strong>,
               <a href="https://natanaso.github.io/">Nikolay Atanasov</a>
               <br>
               <em>CoPerception: Collaborative Perception and Learning, ICRA 2023 Workshop.</em><br>
-              <a href="https://youtu.be/KosSp3znqFo">video</a> /
+              <a href="https://youtu.be/ZGuEsVOl1e4">video</a> /
               <a href="https://arxiv.org/abs/2402.08867">paper</a> /
               <a href="https://github.com/ExistentialRobotics/ROAM/tree/master/ROAM-Mapping">code</a>
               <p>This work develops a distributed optimization algorithm for multi-robot 3-D semantic mapping using streaming range and visual observations and single-hop communication. Our approach relies on gradient-based optimization of the observation log-likelihood of each robot subject to a map consensus constraint to build a common multi-class map of the environment. This formulation leads to closed-form updates which resemble Bayes rule with one-hop prior averaging. To reduce the amount of information exchanged among the robots, we utilize an octree data structure that compresses the multi-class map distribution using adaptive-resolution.</p>
